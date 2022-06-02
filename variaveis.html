@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>variaveis</title>
+</head>
+<body>
+    <script type="text/javascript">
+        let funcao01 = function(){
+            console.log("dentro da função 1:", nome);
+             nome = "juliano"
+            console.log("dentro da função 2");
+            var nome= "Juliano";
+            
+        }
+        let nome= "pedro";
+        console.log("fora da função1:", nome);
+        
+        
+        funcao01();
+        console.log("fora da função1:", nome);
+    </script>
+</body>
+
+       
+</html>

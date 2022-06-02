@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tipagem</title>
+</head>
+<body>
+    <script type="text/javascript">
+        let inteiro = 123;
+         console.log('let inteiro é:', typeof inteiro)
+        let decimal = 123.5; // number
+        console.log('let decimal é:', typeof decimal)
+        let inteiro2 = '123';
+        console.log('let inteiro2 é :', typeof inteiro2)
+        let decimal2 = '123.5';
+        console.log('let decimal2 é :', typeof decimal2)
+        let string = "@!asd;:)";
+        console.log('let string é :', typeof string)
+        let nulo = null;
+        console.log('let nulo é :', typeof nulo)
+        let indefinido = undefined;
+        console.log('let indefinido é :', typeof indefinido)
+        let vetor = [];
+        console.log('let vetor é :', typeof vetor)
+        let objeto = {};
+        console.log('let objeto é :', typeof objeto)
+        let notanumber = NaN;
+        console.log('let notanumber é :', typeof notanumber)
+        let data = new Date();
+        console.log('let data é:', typeof data)
+        let booleano = false
+        console.log('let booleano é: ', typeof booleano);
+        console.log(boolean('bb'))  
+    
+        inteiro2 = Number(inteiro2);
+        console.log(
+                    `Let Inteiro2 ${inteiro2} convertido é:`,
+                     typeof inteiro2,
+                    'valor',inteiro2);
+                    
+        data = Number('batata');
+        console.log('let data convertido é:', typeof data,
+                    'valor',data)
+                    /*
+                    OPERAÇÕES RELACIONAIS
+                        === verifica se o valor e tipo são iguais
+                        !== verifica se o valor e tipo sao diferentes
+                        == verifica se o valor é igual
+                        != verifica se o valor é diferente
+                        > verifica se o elemento da esquerda é maior do que o da direita
+                        >= verifica se o elemento da esquerda é maior ou igual do que o da direita
+                        < verifica se o elemento da esquerda é menor do que o da direita
+                        <= verifica se o elemento da esquerda é menor ou igual do que o da direita
+                    
+                    */           
+                
+
+
+                   
+                    if('123' === 123){
+                        // ações caso a condição seja verdadeira
+                        console.log('isso é igual',123+Number('123'));
+
+                    }else{
+                        //ações caso a condição do if seja falso
+                        console.log('isso é diferente', 123 + '123');
+                    }
+
+
+    </script>
+</body>
+</html>
