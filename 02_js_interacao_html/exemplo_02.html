@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onload=" paginaCarregada()">
+    <header id="cabecalho"
+    
+
+        
+        onmouseover="efeito_no_header(this)"
+        onmouseleave="efeito_no_header_normal(this)"
+    >
+        <h1 onclick="ClickNoCabecalho()">Cabeçalho</h1></header>
+    <aside>
+        <button type="button"
+        onclick="trocar_cabecalho()">
+        troca cabeçalho
+        </button>
+        <button type="button"
+        onclick="resetarContador()">RESETAR</button>
+    </aside>
+            
+    <footer><h1>Rodape</h1></footer>
+
+    <script type="text/javascript">
+        let contador = 0;
+        let cabecalho = document.getElementById('cabecalho');
+        
+            
+        const trocar_cabecalho = ()=>{
+            contador = contador + 1;
+            cabecalho.innerHTML = `<h1> Mudou${contador}</h1>`
+        };
+
+
+        const resetarContador = ()=>{
+            contador = 0;
+            cabecalho.innerHTML = `<h1> Agora é ${contador}</h1>`
+
+
+        }
+
+
+
+        const efeito_no_header_normal = (element)=>{
+            element.style.color = "#000";
+            //element.innerText = "Mouse Saiu"
+            element.innerHTML="<h1>Mouse saiu!</h1>";
+        };
+
+        const efeito_no_header = (element)=>{
+              //console.log(element);
+              element.style.color="#01AB67";
+              // usado apenas para trocar o texto
+              //element.innerText = "Mouse saiu!"
+              //element.innerText = "Mouse entrou!"
+              // usado para imbutir um novo elemento html
+              element.innerHTML="<h1> Mouse entrou </h1>";
+        };
+        
+        const paginaCarregada = ()=>{ 
+            //alert('A pagina carregou!')
+        };
+
+        const ClickNoCabecalho = ()=>{
+            alert('Você fez um click no cabeçalho')
+        };
+    </script>
+    
+</body>
+</html>
