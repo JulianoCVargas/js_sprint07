@@ -1,0 +1,30 @@
+[
+    {
+        "produto": "produto 1",
+        "preco": 20,
+        "descricao": "teste de produto 1",
+        "em_estoque": true,
+        "img":""
+    },
+    {
+        "produto": "produto 2",
+        "preco": 30,
+        "descricao": "teste de produto 2",
+        "em_estoque": true,
+        "img":""
+    },
+    {
+        "produto": "produto 3",
+        "preco": 200,
+        "descricao": "teste de produto 3",
+        "em_estoque": false,
+        "img":""
+    },
+    {
+        "produto": "produto 4",
+        "preco": 2,
+        "descricao": "teste de produto 4",
+        "em_estoque": true,
+        "img":""
+    }
+]

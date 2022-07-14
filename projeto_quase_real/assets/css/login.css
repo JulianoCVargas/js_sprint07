@@ -1,0 +1,25 @@
+form {
+    width: 500px;
+    margin-left: 20%;
+    padding-top: 100 px;
+
+}
+
+a {
+    padding-right: 20px;
+    
+
+}
+
+.botao {
+    background-color: black;
+    color: antiquewhite;
+    width: 200px;
+    border: none;
+    border-radius: 20%;
+
+    margin-left:  5%;
+
+
+
+}
